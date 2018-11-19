@@ -164,7 +164,7 @@ WebRtcStreamer.prototype.createPeerConnection = function() {
 		}
 	}
 
-	try {
+	/*try {
 		var dataChannel = pc.createDataChannel("ClientDataChannel");
 		dataChannel.onopen = function() {
 			console.log("local datachannel open");
@@ -175,7 +175,7 @@ WebRtcStreamer.prototype.createPeerConnection = function() {
 		}
 	} catch (e) {
 		console.log("Cannor create datachannel error: " + e);
-	}	
+	}*/
 	
 	console.log("Created RTCPeerConnnection with config: " + JSON.stringify(this.pcConfig) + "option:"+  JSON.stringify(this.pcOptions) );
 	return pc;
